@@ -5,7 +5,7 @@ $id = $_POST['userId'];
 $pw = $_POST['userPw'];
 $name = $_POST['userName'];
 $email = $_POST['userEmail'];
-$phone = $_POST['userPhone'];
+$phone = $_POST['userPhon'];
 
 $sql = "INSERT INTO project_user SET
 id = '$id',
@@ -21,14 +21,14 @@ if($res){
     echo "
     <script>
     location.href='log_in.php';
-    alert('íšŒì›ê°€ì…ì— ì„±ê³µí–ˆìŠµë‹ˆë‹¤.');
+    alert('È¸¿ø°¡ÀÔ¿¡ ¼º°øÇß½À´Ï´Ù.');
     </script>
     ";
 }else{
     echo "
     <script>
     location.href='sign_up.php';
-    alert('íšŒì›ê°€ì…ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.');
+    alert('È¸¿ø°¡ÀÔ¿¡ ½ÇÆĞÇß½À´Ï´Ù.');
     </script>
     ";
 
