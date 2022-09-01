@@ -1113,6 +1113,93 @@ section영역 */
     background-color: #1a93ca;
     cursor: pointer;
 }
+/* index_from>footer() 영역 */
+/* >footer(/footer.php) 영역 */
+.footer {
+    background-color: #1a93ca;
+    width: 96%;
+    padding: 2%;
+    content: "";
+}
+.footer>div {
+    width: 94%;
+}
+.footer_top {
+    display: flex;
+    flex-direction: row;
+}
+.footer_top>p {
+    color: white;
+    margin-top: 0.5em;
+    font-family: 'Do Hyeon', sans-serif;
+}
+.footerBtn {
+    content: "";
+    height: 3rem;
+    width: 3rem;
+    /* footerBtn_Ch 클릭시 변화 (회전)
+    transform: rotate( 0deg ) translate( 0% , 20% ); */
+    
+    transform: rotate( -180deg ) translate( -25% , 10% );
+    cursor : pointer;
+}
+
+.footerBtn_Ch {
+    content: "";
+    position: relative;
+    width: 1.5rem;
+    height: 0.4rem;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    transform: rotate( -45deg ) translate( -13% , 170% );
+
+}
+.footerBtn_Ch::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 0.4rem;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    transform: rotate( -90deg ) translate( -30% , 100% );
+}
+.footer_center {
+    color: white;
+    display: none;
+    margin-bottom: 1rem;
+}
+.footer_center>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0%;
+    color: white;
+    list-style: none;
+}
+.footer_center>ul>li>a {
+    color: white;
+}
+.footer_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer_bottom>ul {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline-start: 0%;
+    color: white;
+    list-style: none;
+}
+.footer_bottom>ul>li>a {
+    color: white;
+}
+
 
 @media all and (max-width:1080px) {
     #list {
