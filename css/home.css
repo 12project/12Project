@@ -926,7 +926,7 @@ section영역 */
     line-height: 5rem;
     display: block;
     background-color: #ebfcff;
-    color: black;
+    color: #009FF5;
     font-family: 'yg-jalnan';
     font-size: 24px;
     text-decoration: none;
@@ -934,7 +934,7 @@ section영역 */
 
 #list-header>ul>li>a:hover {
     background-color: white;
-    color: red;
+    color: #E0952C;
 }
 
 #list {
@@ -1057,6 +1057,10 @@ section영역 */
 
 .title-word {
     font-family: 'yg-jalnan';
+}
+
+.title-word:hover {
+    color: #E0952C;
 }
 
 .title-link {
